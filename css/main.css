@@ -1,0 +1,49 @@
+body {
+  background: #ffffcd;
+}
+
+.header {
+  text-align: center;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  background-color: #ffaa4e;
+  text-transform: uppercase;
+  margin: 30px;
+  font-size: 15px;
+  border: 2px solid black;
+}
+
+button:hover {
+  background-color: #ff5500;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.gameboard {
+  width: 460px;
+  height: 460px;
+  margin: 50px auto;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  float: left;
+  text-align: center
+}
+
+.ol-top {
+  border-top: 2px solid #ffaa4e;
+}
+
+.ol-left {
+  border-left: 2px solid #ffaa4e;
+}
