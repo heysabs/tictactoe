@@ -37,7 +37,8 @@ h1 {
   width: 150px;
   height: 150px;
   float: left;
-  text-align: center
+  text-align: center;
+  line-height: 150px;
 }
 
 .ol-top {
