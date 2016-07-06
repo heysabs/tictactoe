@@ -4,7 +4,7 @@ function init() {
 
 var allBoxes = document.getElementsByClassName('box');
 
-var gameStatus = document.querySelector('h1');
+var gameStatus = document.querySelector('h2');
 
 var playerTurn = true;
 
@@ -29,7 +29,7 @@ function playerMove() {
     }
     else if (this.innerHTML === "" && !playerTurn) {
       this.innerHTML = "O";
-      this.style.background = "#fd9977";
+      this.style.background = "#fffbba";
       playerTurn = true;
       gameStatus.innerHTML = "Player X, make your move.";
       getWinner();
@@ -50,9 +50,13 @@ function getWinner() {
         if ( playerXWins() ) {
           console.log("Player X Wins!");
           gameStatus.innerHTML = "Player X is the Winner!";
+          alert("Player X Wins! Play again?");
+          window.location.reload();
         } else {
           console.log("Player O Wins!");
           gameStatus.innerHTML = "Player O is the Winner!";
+          alert("Player O Wins! Play again?");
+          window.location.reload();
         }
      } else {
        console.log("It's a tie!");
@@ -157,7 +161,7 @@ function oWinsDiagonal() {
   }
 }
 
-// tieGame
+// Tie Game
 
 function tieGame() {
   if ( allBoxes[0].innerHTML !== "" && allBoxes[1].innerHTML !== "" && allBoxes[2].innerHTML !== "" &&
